@@ -40,10 +40,11 @@
                 </table>
               </div>
               <hr>
-              <button @click="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-lg btn-warning border-0 shadow-sm"><i class="fa fa-shopping-cart"></i> TAMBAH KE KERANJANG
-              </button>
-              <button @click="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-lg btn-warning border-0 shadow-sm"> BELI
-              </button>
+              <div class="col-md-12">
+                <button @click="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-lg btn-warning border-0 shadow-sm"><i class="fa fa-shopping-cart"></i> TAMBAH KE KERANJANG
+                </button>
+                <nuxt-link :to="{name: 'cart'}" @click="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-lg btn-warning border-0 shadow-sm"> BELI </nuxt-link>
+              </div>
             </div>
           </div>
         </div>
@@ -95,16 +96,16 @@
     //meta
     head() {
       return {
-        title: `${this.product.title} - MI STORE - Distributor Xiaomi Indonesia Resmi`,
+        title: `${this.product.title} - Mamang Store`,
         meta: [{
             hid: 'og:title',
             name: 'og:title',
-            content: `${this.product.title} - MI STORE - Distributor Xiaomi Indonesia Resmi`,
+            content: `${this.product.title} - MAMANG STORE`,
           },
           {
             hid: 'og:site_name',
             name: 'og:site_name',
-            content: `${this.product.title} - MI STORE - Distributor Xiaomi Indonesia Resmi`,
+            content: `${this.product.title} - MAMANG STORE`,
           },
           {
             hid: 'og:image',
