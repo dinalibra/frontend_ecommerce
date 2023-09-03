@@ -67,13 +67,13 @@ loading: {
   
   pwa: {
     meta: {
-      title: 'MI STORE - Distributor Xiaomi Indonesia Resmi',
-      author: 'Xiaomi Indonesia'
+      title: 'MAMANG STORE',
+      author: 'MAMANG STORE'
     },
     manifest: {
-      name: 'Xiaomi',
-      short_name: 'xiaomi',
-      description: 'Official Toko Online Penjualan Produk Xiaomi',
+      name: 'MAMANG STORE',
+      short_name: 'MAMANG STORE',
+      description: 'Toko Online MAMANG STORE',
       lang: 'en'
     },
     icon: {

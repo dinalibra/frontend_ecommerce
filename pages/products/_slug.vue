@@ -43,7 +43,6 @@
               <div class="col-md-12">
                 <button @click="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-lg btn-warning border-0 shadow-sm"><i class="fa fa-shopping-cart"></i> TAMBAH KE KERANJANG
                 </button>
-                <nuxt-link :to="{name: 'cart'}" @click="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-lg btn-warning border-0 shadow-sm"> BELI </nuxt-link>
               </div>
             </div>
           </div>
@@ -126,12 +125,31 @@
       await store.dispatch('web/product/getDetailProduct', route.params.slug)
     },
 
+    //hook "fetch"
+    async fetch() {
+
+    //fething carts on Rest API
+    await this.$store.dispatch('web/cart/getCartsData')
+    await this.$store.dispatch('web/cart/getCartPrice')
+
+    },
+    
     //computed
     computed: {
 
       //product
       product() {
         return this.$store.state.web.product.product
+      },
+
+      //cartPrice
+      cartPrice() {
+        return this.$store.state.web.cart.cartPrice
+      },
+
+      //cartTotal
+      cartTotal() {
+        return this.$store.state.web.cart.carts.length
       },
     },
 

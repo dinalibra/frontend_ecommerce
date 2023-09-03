@@ -73,7 +73,7 @@
 </template>
 
 <script>
-  export default {
+  export default { 
 
     //hook "fetch"
     async fetch() {

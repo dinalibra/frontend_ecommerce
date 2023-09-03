@@ -220,26 +220,26 @@
     //meta
     head() {
       return {
-        title: 'Cart - MI STORE - Distributor Xiaomi Indonesia Resmi',
+        title: 'MAMANG STORE',
         meta: [{
             hid: 'og:title',
             name: 'og:title',
-            content: 'Cart - MI STORE - Distributor Xiaomi Indonesia Resmi'
+            content: 'MAMANG STORE'
           },
           {
             hid: 'og:site_name',
             name: 'og:site_name',
-            content: 'Cart - MI STORE - Distributor Xiaomi Indonesia Resmi'
+            content: 'MAMANG STORE'
           },
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '/images/shopping-cart.png'
+            content: '/images/logo.png'
           },
           {
             hid: 'description',
             name: 'description',
-            content: 'Cart - Official Toko Online Penjualan Produk Xiaomi'
+            content: 'MAMANG STORE'
           },
         ]
       }
